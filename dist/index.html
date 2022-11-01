@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="ZSWI projekt"/>
+        <link rel="stylesheet" href="./style.css">
+        <title> ZSWI </title>
+    </head>
+    <body>
+        <noscript> You need to enable JavaScript to run this app. </noscript>
+        <canvas id="canvas" width="1260" height="900"></canvas>
+        <div id="gui" class="dark">
+            <div id="game-ui" style="display: none">
+                <img id="menu-icon" src="./images/menu.png" width="50" height="50">
+                <div id="game-stats"> 
+                    <div> čas: <span class="time-passed"></span> </div>
+                    <div> počet kliknutí: <span class="clicks-count"></span> </div>
+                    <div> opakování tahu: <span class="wrong-count"></span> </div>
+                </div>
+            </div>
+            <div id="menu">
+                <div id="menu-left">
+                    <img id="menu-img" src="./images/krtek.png">
+                    <img id="menu-img-victory" style="display:none" src="./images/victory.png">
+                </div>
+                <div id="menu-right">
+                    <div id="victory" style="display: none">
+                        VÝHRA!
+                    </div>
+                    <div id="buttons">
+                        <button id="continue-game" style="display: none"> POKRAČOVAT </button>
+                        <button id="new-game"> NOVÁ HRA </button>
+                    </div>
+                    <div id="results" style="display: none">
+                        <div> čas: <span class="time-passed"></span> </div>
+                        <div> počet kliknutí: <span class="clicks-count"></span> </div>
+                        <div> opakování tahu: <span class="wrong-count"></span> </div>
+                        <div> skóre: <span id="score"></span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./bundle.js"></script>
+    </body>
+</html>

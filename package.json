@@ -1,0 +1,19 @@
+{
+  "name": "zswi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mitchallen/maze-generator-square": "^0.1.24",
+    "generate-maze": "^1.1.0",
+    "webpack": "^5.70.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.9.2"
+  }
+}
